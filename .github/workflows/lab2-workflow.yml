@@ -23,4 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{ inputs.custom_message }}
+      - if: ${{ inputs.run-job == 'true' }}
+        run: echo ${{ inputs.run_job }}
         
+        
+  
